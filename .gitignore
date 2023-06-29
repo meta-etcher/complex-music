@@ -1,6 +1,15 @@
 # Compiled class file
 *.class
 
+#build folder
+build/*
+
+#idea folder
+.idea
+
+#.gradle user specific folder
+.gradle
+
 # Log file
 *.log
 
