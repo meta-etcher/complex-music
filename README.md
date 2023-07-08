@@ -9,7 +9,7 @@ method to generate music from the Mandelbrot set.
 Musical material in this library is primarily represented as a series of integers, which provides rich functionality and
 can be naturally mapped to other representations. For example, integer pitches can be interpreted as intervals that are
 transposed to a root scale pitch and applied to other series of material. This approach offers a powerful and flexible
-way to generate music in various styles, and even create new styles.
+way to generate music.
 
 The library demonstrates a method to map sets of complex numbers to series of integers and generate music based 
 on that material.
@@ -114,7 +114,7 @@ println(pitches.skipStep(skips, false))     // octave parameter is false
 
 Here is an example that demonstrates the octave awareness of the `skipStep` function. Each generated pitch includes the
 MIDI pitch value along with its corresponding octave. The example showcases how the octave dynamically adjusts while staying
-within the scale, allowing the generation to utilize the full range of the keyboard naturally.
+within the scale.
 
 ```kotlin
 val scale = listOf(60, 62, 64, 65, 67, 69, 71)  // c major scale
@@ -326,6 +326,8 @@ The code to generate the examples can be found in the `org.metaetcher.music.exam
 
 Both of these compositions employ the techniques described in this document and the accompanying paper
 linked in the introduction. The MP3 versions of the compositions are also embedded in the paper.
+
+_An additional set of generic musical examples will be added soon._
 
 ## License
 This project is licensed under the Apache 2.0 License. Please refer to the LICENSE file for more information and details.
